@@ -30,7 +30,7 @@ English | [中文](https://github.com/SafeRL-Lab/nano-claude-code/blob/main/docs
 
 ## 🔥🔥🔥 News (Pacific Time)
 
-- Apr 05, 2026 (**v3.05.5**): **Interactive Ollama Model Picker, Windows fixes, /brainstorm command**
+- 10:04 PM, Apr 05, 2026 (**v3.05.5**): **Interactive Ollama Model Picker, Windows fixes, /brainstorm command**
   - **Interactive Ollama Model Picker** — when a request fails with 404 (model not found), nano-claude now queries the local Ollama API (`/api/tags`) and presents a numbered model selector so you can switch to an available model and retry without restarting. Cancelling the picker aborts gracefully without crashing the REPL.
   - **Windows file handling** — `_read`, `_write`, and `_edit` in `tools.py` now force UTF-8 encoding and `newline=""` to prevent encoding failures with accented characters and double-CRLF on Windows. `_edit` detects pure-CRLF files (all `\n` are part of `\r\n`) and restores their line endings after edit; mixed-line-ending files are left as-is to avoid corruption.
   - **/brainstorm command** — `/brainstorm [topic]` runs a multi-persona AI debate with 5 specialized agents (Architect, Innovator, Security, Code Quality, Performance). Results are saved to `brainstorm_outputs/` and synthesized by the main agent.
